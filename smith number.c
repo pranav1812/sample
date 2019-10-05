@@ -2,7 +2,7 @@
 /*checks whether the entered number is smith number or not
 A smith number is a number the sum of whose digits of prime factors = sum of its digits*/
 int sdigs(int p)
-{
+{// function to find sum of digits of prime factors
     int s=0;
    while(p>0)
     {
@@ -12,7 +12,7 @@ int sdigs(int p)
     return s;
 }
 int checkprime(int x)
-{
+{// function to check primes
   int t=1;
   for(int i=2;i<=x/2;i++)
   {
@@ -48,7 +48,7 @@ int main()
         while(x%j==0)
         {
           sum1+=sdigs(j);
-          x/=j;
+          x/=j;// new value of x has to be stored
 
         }
       }
