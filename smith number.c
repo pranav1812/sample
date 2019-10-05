@@ -1,4 +1,6 @@
 #include<stdio.h>
+/*checks whether the entered number is smith number or not
+A smith number is a number the sum of whose digits of prime factors = sum of its digits*/
 int sdigs(int p)
 {
     int s=0;
