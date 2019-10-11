@@ -3,13 +3,13 @@
 A smith number is a number the sum of whose digits of prime factors = sum of its digits*/
 int sdigs(int p)
 {// function to find sum of digits of prime factors
-    int s=0;
+    int S=0;
    while(p>0)
     {
-      s+=p%10;
+      S+=p%10;
       p/=10;
     }
-    return s;
+    return S;
 }
 int checkprime(int x)
 {// function to check primes
